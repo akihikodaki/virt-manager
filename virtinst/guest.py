@@ -354,8 +354,7 @@ class Guest(XMLBuilder):
             return False
 
         # These _only_ support virtio so don't check the OS
-        if (self.os.is_arm_machvirt() or
-            self.os.is_riscv_virt() or
+        if (self.os.is_riscv_virt() or
             self.os.is_s390x() or
             self.os.is_pseries() or
             self.os.is_loongarch64()):
